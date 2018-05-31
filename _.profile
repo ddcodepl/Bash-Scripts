@@ -21,9 +21,10 @@ alias apacherestart="sudo /usr/sbin/apachectl restart"
 
 # Custom
 alias speed="speedtest-cli"
-alias addsite="sudo sh $HOME/add_site"
-alias addsitewordpress="sudo sh $HOME/add_site_wordpress"
-alias addsitelaravel="sudo sh $HOME/add_site_laravel"
+alias addsite="sudo sh /Users/damian/add_site"
+alias addsitewordpress="sudo sh ~/add_site_wordpress"
+alias addsitelaravel="sudo sh /Users/damian/add_site_laravel"
+
 
 # MySQL
 alias mysql="mysql -u root -ppassword"
@@ -48,3 +49,10 @@ alias branch="git branch"
 alias checkout="git checkout"
 alias branches="git branch -a"
 alias commit="git commit -m"
+
+# Vagrant
+alias vup="vagrant up"
+alias vstop="vagrant halt"
+alias vhalt="vagrant halt"
+alias vssh="vagrant ssh"
+alias vinit="vagrant init"
