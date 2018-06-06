@@ -49,6 +49,7 @@ alias branch="git branch"
 alias checkout="git checkout"
 alias branches="git branch -a"
 alias commit="git commit -m"
+alias greset="git reset --hard"
 
 # Vagrant
 alias vup="vagrant up"
