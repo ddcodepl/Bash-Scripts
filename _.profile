@@ -26,7 +26,7 @@ alias speed="speedtest-cli"
 alias addsite="sudo sh ~/add_site"
 alias addsitewordpress="sudo sh ~/add_site_wordpress"
 alias addsitelaravel="sudo sh ~/add_site_laravel"
-alias addsitelument="sudo sh ~/add_site_lumen.sh"
+alias addsitelumen="sudo sh ~/add_site_lumen.sh"
 
 # MySQL
 alias mysql="mysql -u root -ppassword"
