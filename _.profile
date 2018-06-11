@@ -1,6 +1,7 @@
 export PATH=${PATH}:/usr/local/mysql/bin
 
 # System
+alias up="uptime"
 alias ..="cd .."
 alias ll="ls -lah"
 alias home="cd ~/"
@@ -18,13 +19,14 @@ alias apache="sudo /usr/sbin/apachectl"
 alias apachestop="sudo /usr/sbin/apachectl stop"
 alias apachestart="sudo /usr/sbin/apachectl start"
 alias apacherestart="sudo /usr/sbin/apachectl restart"
+alias apachetest="sudo /usr/sbin/apachectl configtest"
 
 # Custom
 alias speed="speedtest-cli"
-alias addsite="sudo sh /Users/damian/add_site"
+alias addsite="sudo sh ~/add_site"
 alias addsitewordpress="sudo sh ~/add_site_wordpress"
-alias addsitelaravel="sudo sh /Users/damian/add_site_laravel"
-
+alias addsitelaravel="sudo sh ~/add_site_laravel"
+alias addsitelument="sudo sh ~/add_site_lumen.sh"
 
 # MySQL
 alias mysql="mysql -u root -ppassword"
