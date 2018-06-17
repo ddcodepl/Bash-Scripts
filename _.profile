@@ -37,8 +37,11 @@ alias artisan="php artisan"
 alias serve="php artisan serve"
 alias cupdate="composer update"
 alias tinker="php artisan tinker"
+alias migrate="php arisan migrate"
 alias cdump="composer dump-autoload"
 alias cclear="php artisan cache:clear"
+alias cmigrate="php artisan make:migration"
+alias rollback="php artisan migrate:rollback"
 alias mreset="php artisan migrate:refresh --seed"
 
 # GIT
