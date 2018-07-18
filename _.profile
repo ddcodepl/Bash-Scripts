@@ -1,11 +1,13 @@
-export PATH=${PATH}:/usr/local/mysql/bin
+export PATH=${PATH}:/usr/local/mysql/bin:/usr/local/lib/node_modules
 
 # System
 alias up="uptime"
 alias ..="cd .."
 alias ll="ls -lah"
 alias home="cd ~/"
+alias srm="sudo rm"
 alias ...="cd ../../"
+alias srmr="sudo rm -R"
 alias sites="cd ~/Sites"
 alias desktop="cd ~/Desktop"
 
@@ -23,10 +25,10 @@ alias apachetest="sudo /usr/sbin/apachectl configtest"
 
 # Custom
 alias speed="speedtest-cli"
-alias addsite="sudo sh ~/add_site"
-alias addsitewordpress="sudo sh ~/add_site_wordpress"
-alias addsitelaravel="sudo sh ~/add_site_laravel"
-alias addsitelumen="sudo sh ~/add_site_lumen.sh"
+alias addsite="sudo sh ~/Dev/bash-scripts/add_site.sh"
+alias addsitewordpress="sudo sh ~/Dev/bash-scripts/add_site_wordpress.sh"
+alias addsitelaravel="sudo sh ~/Dev/bash-scripts/add_site_laravel.sh"
+alias addsitelumen="sudo sh ~/Dev/bash-scripts/add_site_lumen.sh"
 
 # MySQL
 alias mysql="mysql -u root -ppassword"
@@ -55,6 +57,7 @@ alias checkout="git checkout"
 alias branches="git branch -a"
 alias commit="git commit -m"
 alias greset="git reset --hard"
+alias gstatus="git status"
 
 # Vagrant
 alias vup="vagrant up"
@@ -62,3 +65,7 @@ alias vstop="vagrant halt"
 alias vhalt="vagrant halt"
 alias vssh="vagrant ssh"
 alias vinit="vagrant init"
+
+# Apps
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
