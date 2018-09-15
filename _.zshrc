@@ -58,8 +58,8 @@ alias branches="git branch -a"
 alias commit="git commit -m"
 alias greset="git reset --hard"
 alias gstatus="git status"
-alias gall="sudo sh ~/Dev/bash-scripts/gitall.sh"
-alias gme="sudo sh ~/Dev/bash-scripts/gitme.sh"
+alias gall="~/Dev/bash-scripts/gitall.sh"
+alias gme="~/Dev/bash-scripts/gitme.sh"
 
 # Vagrant
 alias vup="vagrant up"
