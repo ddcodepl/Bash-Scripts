@@ -45,6 +45,8 @@ alias cclear="php artisan cache:clear"
 alias cmigrate="php artisan make:migration"
 alias rollback="php artisan migrate:rollback"
 alias mreset="php artisan migrate:refresh --seed"
+alias gall="sudo sh ~/Dev/bash-scripts/gitall.sh"
+alias gme="sudo sh ~/Dev/bash-scripts/gitme.sh"
 
 # GIT
 alias gadd="git add ."
