@@ -58,6 +58,7 @@ alias branches="git branch -a"
 alias commit="git commit -m"
 alias greset="git reset --hard"
 alias gstatus="git status"
+alias gmerge="git merge"
 alias gall="~/Dev/bash-scripts/gitall.sh"
 alias gme="~/Dev/bash-scripts/gitme.sh"
 

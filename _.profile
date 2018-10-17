@@ -1,10 +1,10 @@
 export PATH=${PATH}:/usr/local/mysql/bin:/usr/local/lib/node_modules
 
 # System
+alias rmf="rm -rf"
 alias up="uptime"
 alias ..="cd .."
 alias ll="ls -lah"
-alias home="cd ~/"
 alias srm="sudo rm"
 alias ...="cd ../../"
 alias srmr="sudo rm -R"
@@ -47,7 +47,7 @@ alias rollback="php artisan migrate:rollback"
 alias mreset="php artisan migrate:refresh --seed"
 
 # GIT
-alias gadd="git add ."
+alias gadd="git add"
 alias pull="git pull"
 alias push="git push"
 alias clone="git clone"
@@ -56,10 +56,13 @@ alias branch="git branch"
 alias checkout="git checkout"
 alias branches="git branch -a"
 alias commit="git commit -m"
+alias commitall="git commit -am"
+alias ucommit="git commit --amend --no-edit"
 alias greset="git reset --hard"
 alias gstatus="git status"
 alias gall="~/Dev/bash-scripts/gitall.sh"
 alias gme="~/Dev/bash-scripts/gitme.sh"
+alias merge="git merge" 
 
 # Vagrant
 alias vup="vagrant up"
@@ -71,3 +74,6 @@ alias vinit="vagrant init"
 # Apps
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+
+#Docker
+alias portainer-start="docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer"
