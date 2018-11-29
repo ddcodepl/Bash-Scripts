@@ -1,10 +1,10 @@
 export PATH=${PATH}:/usr/local/mysql/bin:/usr/local/lib/node_modules
 
 # System
-alias rmf="rm -rf"
 alias up="uptime"
 alias ..="cd .."
 alias ll="ls -lah"
+alias home="cd ~/"
 alias srm="sudo rm"
 alias ...="cd ../../"
 alias srmr="sudo rm -R"
@@ -62,7 +62,7 @@ alias greset="git reset --hard"
 alias gstatus="git status"
 alias gall="~/Dev/bash-scripts/gitall.sh"
 alias gme="~/Dev/bash-scripts/gitme.sh"
-alias merge="git merge" 
+alias merge="git merge"
 
 # Vagrant
 alias vup="vagrant up"
@@ -71,9 +71,11 @@ alias vhalt="vagrant halt"
 alias vssh="vagrant ssh"
 alias vinit="vagrant init"
 
+# NPM
+alias start="npm run start"
+alias build="npm run build"
+alias bukd:dev="npm run build:dev"
+
 # Apps
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
-
-#Docker
-alias portainer-start="docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer"
