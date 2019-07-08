@@ -62,7 +62,10 @@ alias greset="git reset --hard"
 alias gstatus="git status"
 alias gall="~/Dev/bash-scripts/gitall.sh"
 alias gme="~/Dev/bash-scripts/gitme.sh"
-alias merge="git merge"
+alias merge="git merge" 
+alias cherry="git cherry-pick"
+alias gdb="git branch -D"
+alias gdbr="git push origin --delete"
 
 # Vagrant
 alias vup="vagrant up"
@@ -72,10 +75,14 @@ alias vssh="vagrant ssh"
 alias vinit="vagrant init"
 
 # NPM
-alias start="npm run start"
+alias start="npm run start" 
 alias build="npm run build"
-alias bukd:dev="npm run build:dev"
+alias build:dev="npm run build --mode=development"
 
 # Apps
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+
+#Docker
+alias portainer-start="docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer"
+alias killaudio="sudo killall coreaudiod"
