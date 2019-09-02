@@ -10,6 +10,8 @@ alias ...="cd ../../"
 alias srmr="sudo rm -R"
 alias sites="cd ~/Sites"
 alias desktop="cd ~/Desktop"
+alias please="sudo"
+alias weather="curl -4 http://v2.wttr.in"
 
 # CHMOD
 alias 644="sudo chmod -R 644"
@@ -24,6 +26,7 @@ alias apacherestart="sudo /usr/sbin/apachectl restart"
 alias apachetest="sudo /usr/sbin/apachectl configtest"
 
 # Custom
+alias please="sudo"
 alias speed="speedtest-cli"
 alias addsite="sudo sh ~/Dev/bash-scripts/add_site.sh"
 alias addsitewordpress="sudo sh ~/Dev/bash-scripts/add_site_wordpress.sh"
@@ -48,6 +51,7 @@ alias mreset="php artisan migrate:refresh --seed"
 
 # GIT
 alias gadd="git add"
+alias gaddf="git add -f"
 alias pull="git pull"
 alias push="git push"
 alias clone="git clone"
@@ -67,22 +71,17 @@ alias cherry="git cherry-pick"
 alias gdb="git branch -D"
 alias gdbr="git push origin --delete"
 
-# Vagrant
-alias vup="vagrant up"
-alias vstop="vagrant halt"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vinit="vagrant init"
-
 # NPM
 alias start="npm run start" 
 alias build="npm run build"
-alias build:dev="npm run build --mode=development"
+alias build:dev="npm run build:dev"
 
 # Apps
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 
+#VPS
+
 #Docker
-alias portainer-start="docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer"
+alias portainer-start="docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock --name portainer -v portainer_data:/data portainer/portainer"
 alias killaudio="sudo killall coreaudiod"
