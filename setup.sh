@@ -23,49 +23,13 @@ else
     echo "Zsh is already installed."
 fi
 
-# Install the specified tools
-tools=(
-    "pyenv"
-    "jq"
-    "htop"
-    "tty-clock"
-    "task"
-    "ncdu"
-    "tldr"
-    "neofetch"
-    "speedtest-cli"
-    "dnsmasq"
-    "you-get"
-    "chromedriver"
-    "nvm"
-    "screen"
-    "wget"
-    "docker-compose"
-    "geckodriver"
-    "mas"
-    "curl"
-    "ctop"
-    "geoip"
-    "ios-deploy"
-    "unzip"
-    "m-cli"
-    "qrencode"
-    "ios-sim"
-    "ffmpeg"
-    "webp"
-    "imagemagick"
-    "nikto"
-    "x264"
-    "x265"
-    "xpdf"
-    "fortune"
-    "aircrack-ng"
-    "terraform"
-    "tree"
-    "cask"
-    "midnight-commander"
-    "thefuck"
-)
+# Initialize an empty array
+declare -a tools
+
+# Read the file line-by-line and add each line to the tools array
+while read -r line; do
+    tools+=("$line")
+done < "./configs/brew-scripts"
 
 for tool in "${tools[@]}"; do
     echo "Installing $tool..."
