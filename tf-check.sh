@@ -9,9 +9,9 @@ check_thefuck_installed() {
     fi
 }
 
-# Function to add the alias to ~/.profile
+# Function to add the alias to ~/.aliases
 add_alias() {
-    echo "eval \$(thefuck --alias)" >> ~/.profile
+    echo "eval \$(thefuck --alias)" >> ~/.aliases
     echo "Alias added successfully."
 }
 

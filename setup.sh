@@ -72,6 +72,14 @@ for tool in "${tools[@]}"; do
     brew install $tool
 done
 
+# Add aliases source to the ~/.profile
+if [ -f "aliases.sh" ]; then
+    echo "Executing aliases.sh..."
+    ./aliases.sh
+else
+    echo "Didn't find aliases.sh"
+fi
+
 # Execute tf-check.sh if exists else show info that it don't exists
 if [ -f "tf-check.sh" ]; then
     echo "Executing tf-check.sh..."
