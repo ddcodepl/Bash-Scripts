@@ -1,4 +1,4 @@
-# MacOS Bash Script Setup for easy life
+# MacOS Bash Script Setup for Easy Life in the Terminal's World 🤓
 
 ## What is this?
 
@@ -60,3 +60,5 @@ sh setup.sh
 * [cask](https://formulae.brew.sh/formula/cask)
 * [midnight-commander](https://formulae.brew.sh/formula/midnight-commander)
 * [thefuck](https://formulae.brew.sh/formula/thefuck)
+
+In case if you would like to modify installing scripts you can feel free to edit `configs/brew-scripts` file.
