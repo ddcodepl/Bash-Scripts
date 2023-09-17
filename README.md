@@ -5,13 +5,14 @@
 This is a simple bash script that will install all the programs I use on a fresh MacOS install. Beside that it will provide customised aliases to simplify life for developers.
 
 ## How to use it?
-1. Run terminal.sh with the following command:
+1. Clone repository to your local machine:
+2. Run terminal.sh with the following command:
 ```bash
-sh _init.sh
+sh setup.sh
 ```
 
-2. Follow the instructions on the screen.
-3. Enjoy your new terminal!
+3. Follow the instructions on the screen.
+4. Enjoy your new terminal!
 
 ## What does it install?
 
