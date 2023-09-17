@@ -29,7 +29,7 @@ declare -a tools
 # Read the file line-by-line and add each line to the tools array
 while read -r line; do
     tools+=("$line")
-done < "./configs/brew-scripts"
+done < "./config/brew-scripts"
 
 for tool in "${tools[@]}"; do
     echo "Installing $tool..."
@@ -37,7 +37,7 @@ for tool in "${tools[@]}"; do
 done
 
 # Add aliases source to the ~/.profile
-if [ -f "aliases.sh" ]; then
+if [ -f "./scripts/_init/aliases.sh" ]; then
     echo "Executing aliases.sh..."
     ./aliases.sh
 else
@@ -45,7 +45,7 @@ else
 fi
 
 # Execute tf-check.sh if exists else show info that it don't exists
-if [ -f "tf-check.sh" ]; then
+if [ -f "./scripts/_init/tf-check.sh" ]; then
     echo "Executing tf-check.sh..."
     ./tf-check.sh
 else

@@ -7,7 +7,7 @@ This is a simple bash script that will install all the programs I use on a fresh
 ## How to use it?
 1. Run terminal.sh with the following command:
 ```bash
-sh setup.sh
+sh _init.sh
 ```
 
 2. Follow the instructions on the screen.
@@ -61,4 +61,4 @@ sh setup.sh
 * [midnight-commander](https://formulae.brew.sh/formula/midnight-commander)
 * [thefuck](https://formulae.brew.sh/formula/thefuck)
 
-In case if you would like to modify installing scripts you can feel free to edit `configs/brew-scripts` file.
+In case if you would like to modify installing scripts you can feel free to edit `config/brew-scripts` file.

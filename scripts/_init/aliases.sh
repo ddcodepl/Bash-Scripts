@@ -4,14 +4,14 @@
 current_dir=$(pwd)
 
 # Check if 'aliases' file exists in the current directory
-if [[ -f "$current_dir/aliases" ]]; then
+if [[ -f "$current_dir/config/aliases" ]]; then
   # Ask the user whether to add the source command to ~/.aliases
-  read -p "The 'aliases' file exists. Do you want to add it to ~/.profile? (y/n): " user_input
+  read -p "The 'config/aliases' file exists. Do you want to add it to ~/.profile? (y/n): " user_input
 
   if [[ $user_input == "y" || $user_input == "Y" ]]; then
     # Add the source command to ~/.aliases
-    echo "source $current_dir/aliases" >> ~/.profile
-    echo "Added 'source $current_dir/profile' to ~/.profile"
+    echo "source $current_dir/config/aliases" >> ~/.profile
+    echo "Added 'source $current_dir/config/aliases' to ~/.profile"
   else
     echo "Skipped adding 'aliases' to ~/.profile."
   fi
