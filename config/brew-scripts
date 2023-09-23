@@ -1,4 +1,4 @@
- pyenv
+pyenv
 jq
 htop
 tty-clock
@@ -38,3 +38,4 @@ tree
 cask
 midnight-commander
 thefuck
+wifi-password

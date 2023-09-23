@@ -1,3 +1,13 @@
+![](https://img.shields.io/badge/Status-Active-green)
+![](https://img.shields.io/badge/OS-MacOS-blue) 
+![](https://img.shields.io/badge/Shell-Bash-blue)
+![](https://img.shields.io/badge/Version-0.0.4-blue)
+![](https://img.shields.io/badge/License-MIT-blue)
+
+![](https://images.unsplash.com/photo-1590971862391-06cac0657603)
+
+![](https://img.shields.io/badge/Author-Damian%20D%C4%85browski%20%28%40_bamboocode%29-blue)
+
 # MacOS Bash Script Setup for Easy Life in the Terminal's World 🤓
 
 ## What is this?
