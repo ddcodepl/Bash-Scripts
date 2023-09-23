@@ -71,5 +71,6 @@ sh setup.sh
 * [cask](https://formulae.brew.sh/formula/cask)
 * [midnight-commander](https://formulae.brew.sh/formula/midnight-commander)
 * [thefuck](https://formulae.brew.sh/formula/thefuck)
+* [wifi-password](https://formulae.brew.sh/formula/wifi-password)
 
 In case if you would like to modify installing scripts you can feel free to edit `config/brew-scripts` file.
