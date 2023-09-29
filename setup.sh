@@ -47,7 +47,7 @@ fi
 # Execute tf-check.sh if exists else show info that it don't exists
 if [ -f "./scripts/_init/tf-check.sh" ]; then
     echo "Executing tf-check.sh..."
-    ./tf-check.sh
+    ./scripts/_init/tf-check.sh
 else
     echo "Didn't find tf-check.sh..."
 fi
