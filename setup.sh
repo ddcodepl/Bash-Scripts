@@ -33,7 +33,7 @@ done < "./config/brew-scripts"
 
 for tool in "${tools[@]}"; do
     echo "Installing $tool..."
-    brew install $tool
+    brew install --cask $tool
 done
 
 # Add aliases source to the ~/.profile
