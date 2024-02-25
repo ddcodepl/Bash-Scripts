@@ -45,14 +45,14 @@ fi
 declare -a tools
 
 # Read the file line-by-line and add each line to the tools array
-while read -r line; do
-    tools+=("$line")
-done < "./config/brew-scripts"
-
-for tool in "${tools[@]}"; do
-    echo "Installing $tool..."
-    brew install --cask $tool
-done
+#while read -r line; do
+#    tools+=("$line")
+#done < "./config/brew-scripts"
+#
+#for tool in "${tools[@]}"; do
+#    echo "Installing $tool..."
+#    brew install --cask $tool
+#done
 
 # Add aliases source to the ~/.profile
 if [ -f "./scripts/_init/aliases.sh" ]; then
