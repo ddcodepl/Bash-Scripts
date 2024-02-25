@@ -12,7 +12,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     if ! command -v brew &>/dev/null; then
         echo "Homebrew is not installed. Installing..."
-        sudo apt-get update && sudo apt-get install build-essential curl file git
+        sudo apt-get update && sudo apt-get install build-essential curl file git -y
 
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.profile
