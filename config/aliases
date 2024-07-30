@@ -127,3 +127,18 @@ alias gclean="git clean -fd"
 alias gcleanall="git clean -fdx"
 alias gbisect="git bisect"
 alias gtime="git commit --amend --reset-author --no-edit"
+
+function cd() {
+  if [[ -d ./venv ]] ; then
+    deactivate
+  fi
+
+  builtin cd $1
+
+  if [[ -d ./venv ]] ; then
+    . ./venv/bin/activate
+  fi
+}
+
+alias source-venv="source venv/bin/activate"
+alias rclone='rclone --transfers=32 --checkers=32 --buffer-size=32M --max-backlog=100000'

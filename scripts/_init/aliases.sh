@@ -4,8 +4,9 @@
 script_dir=$(dirname "$0")
 
 # Navigate to the root directory of your project structure
-root_dir=$(realpath "$script_dir/../..")
+#root_dir=$(realpath "$script_dir/../..")
 
+root_dir=script_dir
 # Check if 'aliases' file exists in the config directory
 if [[ -f "$root_dir/config/aliases" ]]; then
     # Ask the user whether to add the source command to ~/.profile
